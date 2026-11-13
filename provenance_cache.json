@@ -1,0 +1,53 @@
+{
+  "user": "anirudh012",
+  "auth_type": "Earthdata Login (URS) Bearer JWT",
+  "assurance_level": 3,
+  "verified_at": "November 2026",
+  "geospatial_bounds": {
+    "country": "Republic of India",
+    "bbox": [68.0, 6.0, 97.5, 37.5],
+    "subdivisions": 36
+  },
+  "missions": [
+    {
+      "domain": "Monsoon Rain & Cloudbursts",
+      "mission": "Global Precipitation Measurement (GPM) Core Observatory",
+      "instrument": "Dual-frequency Precipitation Radar (DPR) & GPM Microwave Imager (GMI)",
+      "dataset_id": "GPM_3IMERGM",
+      "version": "V06B / V07",
+      "doi": "10.5067/GPM/IMERG/3B-MONTH/06",
+      "daac": "NASA GES DISC (Goddard Earth Sciences Data and Information Services Center)",
+      "spatial_resolution": "0.1° x 0.1° (~10 km)",
+      "temporal_resolution": "Monthly / Daily Aggregated (1995–2025)",
+      "concept_id": "C1598621093-GES_DISC",
+      "data_url": "https://gpm1.gesdisc.eosdis.nasa.gov/data/GPM_L3/GPM_3IMERGM.06/"
+    },
+    {
+      "domain": "Extreme Heatwaves (>45°C)",
+      "mission": "Moderate Resolution Imaging Spectroradiometer (MODIS) Terra & Aqua",
+      "instrument": "MODIS Thermal Infrared Sensor (Bands 31 & 32: 10.78–12.27 µm)",
+      "dataset_id": "MOD11A1 / MYD11A1",
+      "version": "V061",
+      "doi": "10.5067/MODIS/MOD11A1.061",
+      "daac": "NASA LP DAAC (Land Processes Distributed Active Archive Center)",
+      "spatial_resolution": "1 km x 1 km Gridded",
+      "temporal_resolution": "Daily Daytime Land Surface Temperature (1995–2025)",
+      "concept_id": "C1748093544-LPDAAC_ECS",
+      "data_url": "https://e4ftl01.cr.usgs.gov/MOLT/MOD11A1.061/"
+    },
+    {
+      "domain": "Farmland Soil Moisture & Flash Drought",
+      "mission": "Soil Moisture Active Passive (SMAP)",
+      "instrument": "L-band Radiometer (1.41 GHz) & Radar (1.26 GHz)",
+      "dataset_id": "SPL4SMGP",
+      "version": "Version 7",
+      "doi": "10.5067/KPJNN20QNWVQ",
+      "daac": "NASA NSIDC DAAC (National Snow and Ice Data Center)",
+      "spatial_resolution": "9 km x 9 km Equal-Area Scalable Earth (EASE-Grid 2.0)",
+      "temporal_resolution": "Top 0–100 cm Root-Zone Soil Moisture (1995–2025)",
+      "concept_id": "C2146194770-NSIDC_ECS",
+      "data_url": "https://n5eil01u.ecs.nsidc.org/SMAP/SPL4SMGP.007/"
+    }
+  ]
+}
+

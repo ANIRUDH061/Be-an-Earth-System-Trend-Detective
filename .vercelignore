@@ -1,0 +1,24 @@
+# ==============================================================================
+# VERCEL DEPLOYMENT IGNORE LIST
+# ==============================================================================
+# These files are tracked in the GitHub repository for development and submission,
+# but are strictly excluded from the public website deployment bundle on Vercel.
+# ==============================================================================
+
+# Private Technical Architecture (Kept for internal reference, hidden from visitors)
+architecture_3d.html
+dev/
+
+# Offline Python Data Verification & APIs (Not executed at runtime)
+fetch_nasa_cmr.py
+*.py
+
+# Internal Hackathon Documentation & Pitch Scripts (Kept in GitHub only)
+NASA_SUBMISSION_PITCH.md
+SLIDE_DECK_OUTLINE.md
+
+# Operating System & Environment Configuration
+.DS_Store
+.env*
+.git*
+
