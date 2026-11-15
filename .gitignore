@@ -21,3 +21,8 @@ venv/
 scratch/
 .system_generated/
 
+# Excluded Architecture & Development Files (Kept out of Git Repo & Production)
+architecture_3d.html
+dev/
+
+

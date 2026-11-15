@@ -83,8 +83,11 @@
 ### Slide 7: Client Action Delivery & Hackathon Winning Impact
 * **Headline:** Turning Space Science into Immediate Action
 * **Key User-Facing Features:**
+  * **Interactive Demonstration Cases (1-Click Walkthroughs):** Pre-packaged NASA case files (Indo-Gangetic Monsoon Deficit, Vidarbha Flash Drought, and Thar vs. Ghats Climate Dipole).
+  * **NASA Variable Detective Assistant:** 2-step guided inquiry helping users pinpoint the exact satellite mission and variable for any geographic threat.
   * **30-Year Live Time-Lapse Player (1995–2025):** Scrubbable slider with milestone event banner and dynamic polygon intensity scaling.
-  * **Comparative Dual-Zone Analytics (Page 2):** Side-by-side dipole analysis for climate dipoles across contrasting ecosystems.
+  * **Comparative Dual-Zone Analytics (Page 2):** Side-by-side dipole analysis proving contrasting regional trends from unified global drivers.
+  * **Deseasonalized Anomaly Engine:** All anomalies standardized against 30-Year IMD Climatology (1991–2020) to remove the annual seasonal cycle.
   * **Deep Zoom (Up to Level 21x):** Search and inspect risk down to universities (IIT Roorkee, Delhi Univ), towns (Kashipur, Bhimtal), and individual streets.
   * **Executive Client Reports in Plain Language:**
     * 5 structured sections: What is happening, Mechanism, Past vs Present, 2035 Prediction, Precautions & solutions.

@@ -29,7 +29,7 @@
 
 | Time | Visual on Screen | Spoken Script (Voiceover) |
 | :---: | :--- | :--- |
-| **0:00 – 0:18** | Screen showing `architecture_3d.html` rotating with glowing 3D conduits and camera presets. | *"Welcome to the India Earth System Trend Detective. Change in Earth's interconnected system is constant, but separating real permanent trends from 1-year weather noise is one of the hardest challenges in Earth science. We built an end-to-end 3D forensic pipeline that fits 100% on one screen, showing how NASA satellites ingest, clean, detect, and deliver climate insights."* |
+| **0:00 – 0:18** | Screen showing Orbit View with 3D Earth, constellation orbit paths, and satellite telemetry. | *"Welcome to the India Earth System Trend Detective. Change in Earth's interconnected system is constant, but separating real permanent trends from 1-year weather noise is one of the hardest challenges in Earth science. We built an end-to-end satellite forensic pipeline that fits 100% on one screen, showing how NASA satellites ingest, clean, detect, and deliver climate insights."* |
 | **0:18 – 0:38** | Switch to `trend_detective_tool.html`. Hover over North India. Show the -28mm deficit curve. | *"Let’s investigate Question 1: What is changing? Across North India's breadbasket, NASA GPM radar proves monsoon rains are compressing into short cloudbursts separated by 15 to 20-day dry spells—dropping 28 mm per decade compared to India's official 30-year IMD baseline."* |
 | **0:38 – 0:58** | Click `Extreme Heatwaves`. Show Rajasthan & Delhi-NCR thermal dome polygons. | *"Next, we inspect extreme heat. MODIS Land Surface Temperature sensors detect blistering heat domes topping 48.8°C in Rajasthan and 46.2°C in Delhi-NCR, adding over 4 extreme heat days per decade with a Mann-Kendall p-value under 0.0001—proving this is a permanent structural shift."* |
 | **0:58 – 1:18** | Press `▶ Play Time-Lapse` button. Watch 1995 ➔ 2025 scrubber animate. | *"Using our 30-Year Live Time-Lapse Scrubber, judges and citizens can watch three decades of environmental evolution unfold in real time. We also integrate a Compound Climate Risk analyzer, showing how surface heat and root-zone soil desiccation combine into rapid flash droughts."* |
@@ -46,5 +46,12 @@
 | **Creativity & Originality** | 20% | Unique combination of **interactive WebGL 3D solid pipeline architecture**, deep-zoom level 21 map, and 30-year temporal animation player. |
 | **Scientific Validity** | 25% | Authenticated with **NASA Earthdata Login (`anirudh012`)**, citing formal CMR DOIs (`GPM_3IMERGM`, `MOD11A1`, `SPL4SMGP`), IMD 1991–2020 climatology, Mann-Kendall $Z$-score, and Benjamini-Hochberg FDR $q < 0.05$. |
 | **Relevance** | 15% | Directly solves the 4 foundational questions of the *"Be An Earth System Trend Detective!"* prompt across Rainfall, Heat, and Soil Stress. |
-| **Presentation & UX** | 15% | Clean White-Pinkish Rose executive UI, instant 1-screen fit, 5 graph types, multi-lingual client briefs, and instant document downloads (.doc, .pdf, .csv). |
+| **Presentation & UX** | 15% | Clean **Biosphere Mint & Pearl** executive UI, instant 1-screen fit, 5 graph types, 1-click demonstration case studies, guided variable assistant, 42-term scientific dictionary, and instant document downloads (.doc, .pdf, .csv). |
+
+---
+
+## 🤖 5. Synthetic Intelligence (SI / AI) Declaration (Space Apps 2026 Mandatory)
+
+* **Generative AI Use Scope:** Generative AI tools were employed assistively during the hackathon for UI styling, responsive design iteration, documentation structuring, and SVG vector icon creation.
+* **Scientific Research & Mathematical Integrity:** All NASA satellite missions (GPM IMERG V07, MODIS LST, SMAP L4), climatological reference baselines (IMD 1991–2020 normal), and statistical methods (Theil-Sen median estimator, Mann-Kendall rank trend test, Benjamini-Hochberg FDR) were independently researched, verified against official NASA CMR metadata, and formulated from peer-reviewed atmospheric science and hydrology literature.
 

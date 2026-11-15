@@ -24,7 +24,6 @@ A single process can cause opposite effects in different places — for example,
 You can run this project directly in any web browser (Google Chrome, Edge, Safari, Firefox) without installing any software or running commands:
 
 * 🗺️ **Main Application**: Open [`index.html`](file:///Users/anirudhgahlot/Documents/nasa/index.html) (or [`trend_detective_tool.html`](file:///Users/anirudhgahlot/Documents/nasa/trend_detective_tool.html))
-* 🎲 **3D Architecture (Development Reference)**: Open [`dev/architecture_3d.html`](file:///Users/anirudhgahlot/Documents/nasa/dev/architecture_3d.html)
 
 ---
 
@@ -71,11 +70,27 @@ We combine 3 primary NASA Earth observation missions:
 ### 5. 📄 1-Click Executive Reports
 * Export plain-English reports and summaries instantly as a Word document (`.doc`), printable PDF, or raw data CSV.
 
+### 6. 🎯 1-Click Guided Demonstration Examples
+* **Case 1**: Indo-Gangetic Breadbasket Monsoon Deficit (-28 mm/dec, p = 0.008).
+* **Case 2**: Central India & Vidarbha Root-Zone Flash Drought (Soil -7.2 pts/dec, p = 0.003).
+* **Case 3**: Opposite Climate Dipole — Thar Desert vs. Western Ghats.
+
+### 7. 🧭 Variable Detective Assistant
+* Answers NASA's inquiry prompt: selects your environmental threat and geographic zone to auto-recommend the exact NASA satellite instrument (GPM, MODIS, SMAP).
+
 ---
 
 ## 🎨 Theme: Biosphere Mint & Pearl
 
 The website uses a fresh ecological **Biosphere Mint & Pearl** theme (crisp white cards, soft pearl background, deep emerald and mint accents, and dark high-contrast text) with support for a **Deep Galaxy** dark theme.
+
+---
+
+## 🤖 Synthetic Intelligence (SI / AI) Declaration
+
+In accordance with the official **NASA Space Apps Challenge 2026** rules:
+* **Assistive Role:** Generative AI tools were used assistively for frontend user interface architecture, responsive CSS layout, SVG iconography, and documentation structuring.
+* **Scientific & Data Integrity:** All satellite mission variables (NASA GPM IMERG V07, Terra/Aqua MODIS LST MOD11A1, SMAP SPL4SMGP), climatological baselines (IMD 1991–2020 30-year normal), and statistical methods (Theil-Sen median slope estimator, Mann-Kendall monotonic rank test, Benjamini-Hochberg FDR) were independently researched, verified, and formulated from peer-reviewed Earth science and hydrological literature.
 
 ---
 
