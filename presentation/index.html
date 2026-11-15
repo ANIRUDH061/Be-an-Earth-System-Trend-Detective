@@ -3,26 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>India Earth System Trend Detective — NASA Space Apps Challenge 2026 (7-Slide Pitch Deck)</title>
+  <title>EarthScope: India Earth System Trend Detective — NASA Space Apps 2026 (7-Slide Pitch Deck)</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   
   <style>
     /* =========================================================================
-       BIOSPHERE MINT & PEARL THEME — NASA SPACE APPS 2026 SLIDE DECK
+       🌿 BIOSPHERE MINT & PEARL THEME (Fresh Ecological)
+       NASA SPACE APPS CHALLENGE 2026 — 7-SLIDE OFFICIAL PITCH DECK
        ========================================================================= */
     :root {
-      --mint-primary: #0f766e;
-      --mint-accent: #10b981;
-      --mint-light: #e6fffa;
-      --mint-subtle: #f0fdf4;
-      --mint-border: rgba(16, 185, 129, 0.35);
+      --mint-primary: #0f766e;              /* Deep Teal */
+      --mint-accent: #10b981;               /* Emerald */
+      --mint-dark: #065f46;                 /* Forest Green */
+      --mint-light: #e6fffa;                /* Ice Mint */
+      --mint-subtle: #f0fdf4;               /* Very Pale Mint */
+      --mint-border: rgba(16, 185, 129, 0.32);
       --mint-badge-bg: #d1fae5;
       --mint-badge-text: #047857;
       --pearl-bg: #f8fafc;
       --pearl-surface: #ffffff;
-      --pearl-card-shadow: 0 14px 34px rgba(15, 118, 110, 0.08), 0 2px 8px rgba(0, 0, 0, 0.04);
+      --pearl-card-shadow: 0 12px 30px rgba(15, 118, 110, 0.07), 0 2px 6px rgba(0, 0, 0, 0.03);
       --text-dark: #0f172a;
       --text-body: #334155;
       --text-muted: #64748b;
@@ -70,7 +72,7 @@
     .slide {
       position: absolute;
       inset: 0;
-      padding: 42px 48px;
+      padding: 38px 46px;
       display: none;
       flex-direction: column;
       background: radial-gradient(circle at 100% 0%, #e6fffa 0%, #f0fdf4 35%, #ffffff 80%);
@@ -91,22 +93,22 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      margin-bottom: 22px;
+      margin-bottom: 20px;
       border-bottom: 1.5px solid var(--mint-border);
-      padding-bottom: 14px;
+      padding-bottom: 12px;
       flex-shrink: 0;
     }
 
     .slide-header-left {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 3px;
     }
 
     .slide-badge-row {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 8px;
     }
 
     .badge-nasa {
@@ -143,16 +145,26 @@
       border: 1px solid #fde68a;
     }
 
+    .badge-blue {
+      background: #e0f2fe;
+      color: #0369a1;
+      font-size: 11px;
+      font-weight: 800;
+      padding: 3px 10px;
+      border-radius: 6px;
+      border: 1px solid #bae6fd;
+    }
+
     .slide-title {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 28px;
+      font-size: 26px;
       font-weight: 800;
       color: var(--mint-primary);
-      letter-spacing: -0.5px;
+      letter-spacing: -0.4px;
     }
 
     .slide-subtitle {
-      font-size: 13.5px;
+      font-size: 13px;
       color: var(--text-muted);
       font-weight: 500;
     }
@@ -163,7 +175,7 @@
       font-weight: 700;
       color: var(--mint-primary);
       background: var(--mint-light);
-      padding: 6px 14px;
+      padding: 5px 13px;
       border-radius: 20px;
       border: 1px solid var(--mint-border);
     }
@@ -172,7 +184,7 @@
     .slide-body {
       flex: 1;
       display: flex;
-      gap: 24px;
+      gap: 22px;
       overflow: hidden;
     }
 
@@ -180,27 +192,27 @@
     .card {
       background: var(--pearl-surface);
       border: 1.5px solid var(--mint-border);
-      border-radius: 14px;
-      padding: 20px;
+      border-radius: 12px;
+      padding: 16px 18px;
       box-shadow: var(--pearl-card-shadow);
       display: flex;
       flex-direction: column;
     }
 
     .card-title {
-      font-size: 16px;
+      font-size: 15px;
       font-weight: 800;
       color: var(--mint-primary);
-      margin-bottom: 8px;
+      margin-bottom: 6px;
       display: flex;
       align-items: center;
-      gap: 8px;
+      gap: 7px;
     }
 
     .card-desc {
-      font-size: 13px;
+      font-size: 12.5px;
       color: var(--text-body);
-      line-height: 1.55;
+      line-height: 1.5;
     }
 
     /* Metric Highlight Boxes */
@@ -208,38 +220,84 @@
       background: var(--mint-subtle);
       border: 1px solid var(--mint-border);
       border-radius: 10px;
-      padding: 12px 14px;
+      padding: 10px 12px;
       display: flex;
       flex-direction: column;
-      gap: 3px;
+      gap: 2px;
     }
 
     .metric-num {
       font-family: 'Space Grotesk', sans-serif;
-      font-size: 26px;
+      font-size: 24px;
       font-weight: 800;
       color: var(--mint-primary);
     }
 
     .metric-label {
-      font-size: 11px;
+      font-size: 10.5px;
       font-weight: 700;
       color: var(--mint-badge-text);
       text-transform: uppercase;
       letter-spacing: 0.4px;
     }
 
+    /* Comparison Table for Slide 5 */
+    .comp-table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1.5px solid var(--mint-border);
+      font-size: 12.5px;
+    }
+
+    .comp-table th {
+      background: #f0fdf4;
+      padding: 10px 14px;
+      font-weight: 800;
+      text-align: left;
+      border-bottom: 1.5px solid var(--mint-border);
+    }
+
+    .comp-table th.hero-th {
+      background: linear-gradient(135deg, #0f766e 0%, #10b981 100%);
+      color: #ffffff;
+    }
+
+    .comp-table td {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e2e8f0;
+      vertical-align: middle;
+      line-height: 1.45;
+    }
+
+    .comp-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .comp-table tr:nth-child(even) {
+      background: #fafafa;
+    }
+
+    .comp-table td.hero-td {
+      background: #f0fdf4;
+      font-weight: 600;
+      color: #065f46;
+      border-left: 1.5px solid var(--mint-border);
+    }
+
     /* Bottom Navigation Bar */
     .deck-controls {
       position: absolute;
-      bottom: 14px;
-      left: 48px;
-      right: 48px;
+      bottom: 12px;
+      left: 46px;
+      right: 46px;
       display: flex;
       align-items: center;
       justify-content: space-between;
       z-index: 50;
-      padding-top: 10px;
+      padding-top: 8px;
       border-top: 1px solid rgba(16, 185, 129, 0.15);
     }
 
@@ -296,10 +354,10 @@
       background: var(--pearl-surface);
       border: 1.5px solid var(--mint-border);
       color: var(--mint-primary);
-      font-size: 12.5px;
+      font-size: 12px;
       font-weight: 700;
-      padding: 6px 14px;
-      border-radius: 8px;
+      padding: 5px 12px;
+      border-radius: 7px;
       cursor: pointer;
       display: flex;
       align-items: center;
@@ -318,7 +376,7 @@
       background: linear-gradient(135deg, var(--mint-primary) 0%, var(--mint-accent) 100%);
       color: #ffffff;
       border: none;
-      box-shadow: 0 3px 10px rgba(16, 185, 129, 0.3);
+      box-shadow: 0 3px 8px rgba(16, 185, 129, 0.25);
     }
 
     /* Print Styles: Exactly 7 Pages in Landscape */
@@ -359,52 +417,52 @@
         <div class="slide-header-left">
           <div class="slide-badge-row">
             <span class="badge-nasa">NASA SPACE APPS 2026</span>
-            <span class="badge-mint">GLOBAL HACKATHON PITCH DECK</span>
+            <span class="badge-mint">🌿 BIOSPHERE MINT & PEARL</span>
             <span class="badge-amber">LEVEL 3 AUTHENTICATED: anirudh012</span>
           </div>
-          <h1 class="slide-title">India Earth System Trend Detective</h1>
-          <p class="slide-subtitle">Separating Permanent 31-Year Climate Shifts from 1-Year Weather Noise across India (1995–2025)</p>
+          <h1 class="slide-title">EarthScope: India Earth System Trend Detective</h1>
+          <p class="slide-subtitle">Isolating 31 Years of Permanent Climate Shifts from 1-Year Weather Noise (1995–2025 ➔ 2040+)</p>
         </div>
         <div class="slide-counter-pill">SLIDE 01 / 07</div>
       </div>
 
-      <div class="slide-body" style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 24px;">
+      <div class="slide-body" style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 20px;">
         <div style="display: flex; flex-direction: column; justify-content: space-between;">
           <div class="card" style="background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%); border-left: 5px solid #0f766e;">
-            <div style="font-size: 13px; font-weight: 800; color: #0f766e; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 6px;">✦ The Core NASA Hook</div>
-            <p style="font-size: 16px; font-weight: 600; color: #0f172a; line-height: 1.5; font-style: italic;">
-              &ldquo;A single Earth science process can drive opposite trends in different regions. While India's national monsoon looks stable on paper, 31 years of NASA satellite radar prove steady seasonal rain has vanished—compressing into violent cloudbursts separated by 20-day dry breaks that starve crops.&rdquo;
+            <div style="font-size: 12.5px; font-weight: 800; color: #0f766e; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 5px;">✦ The Core NASA Hook</div>
+            <p style="font-size: 15px; font-weight: 600; color: #0f172a; line-height: 1.5; font-style: italic;">
+              &ldquo;A single Earth science process can drive opposite trends in different regions. While India's national monsoon looks stable on paper, 31 years of NASA satellite radar prove steady seasonal rain has vanished—compressing into violent cloudbursts separated by 20-day dry spells that starve crops.&rdquo;
             </p>
           </div>
 
-          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;">
+          <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px;">
             <div class="metric-box">
               <span class="metric-num">31 Yrs</span>
               <span class="metric-label">Continuous Record</span>
-              <span style="font-size: 11px; color: #64748b;">1995–2025 Satellite Era</span>
+              <span style="font-size: 11px; color: #64748b;">1995–2025 NASA Era</span>
             </div>
             <div class="metric-box">
-              <span class="metric-num">40,000</span>
-              <span class="metric-label">Grid Cells</span>
-              <span style="font-size: 11px; color: #64748b;">0.1° (~10km) Spatial Mesh</span>
+              <span class="metric-num">3 Signs</span>
+              <span class="metric-label">Vital Systems</span>
+              <span style="font-size: 11px; color: #64748b;">Rain, Heat &amp; Soil</span>
             </div>
             <div class="metric-box">
-              <span class="metric-num">p &lt; 0.05</span>
-              <span class="metric-label">FDR Verified</span>
-              <span style="font-size: 11px; color: #64748b;">Mann-Kendall & Sen's Slope</span>
+              <span class="metric-num">p &lt; 0.01</span>
+              <span class="metric-label">&gt;99% Certainty</span>
+              <span style="font-size: 11px; color: #64748b;">Theil-Sen &amp; Mann-Kendall</span>
             </div>
           </div>
 
-          <div class="card" style="padding: 14px 18px;">
+          <div class="card" style="padding: 12px 16px;">
             <div style="display: flex; align-items: center; justify-content: space-between;">
               <div>
-                <div style="font-size: 12px; font-weight: 700; color: #0f766e;">Team: EarthMatrix Detective Crew</div>
-                <div style="font-size: 11.5px; color: #64748b;">Theme: Biosphere Mint & Pearl • Client Zero-Latency Architecture</div>
+                <div style="font-size: 12px; font-weight: 700; color: #0f766e;">Challenge: &ldquo;Be An Earth System Trend Detective!&rdquo;</div>
+                <div style="font-size: 11.5px; color: #64748b;">100% In-Browser Zero Latency • 6 Agro-Climatic Zones • Free Open Science API</div>
               </div>
-              <div style="display: flex; gap: 6px;">
-                <span class="badge-mint" style="font-size: 10px;">🌧️ GPM IMERG</span>
-                <span class="badge-mint" style="font-size: 10px;">☀️ MODIS LST</span>
-                <span class="badge-mint" style="font-size: 10px;">🌱 SMAP RZSM</span>
+              <div style="display: flex; gap: 5px;">
+                <span class="badge-mint" style="font-size: 10px;">🌧️ GPM</span>
+                <span class="badge-mint" style="font-size: 10px;">☀️ MODIS</span>
+                <span class="badge-mint" style="font-size: 10px;">🌱 SMAP</span>
               </div>
             </div>
           </div>
@@ -412,68 +470,68 @@
 
         <div class="card" style="padding: 0; overflow: hidden; position: relative; border: 2px solid var(--mint-border);">
           <img src="assets/orbit_view_console.jpg" alt="Orbit View 3D Console" style="width: 100%; height: 100%; object-fit: cover;">
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(12,18,34,0.92)); padding: 18px; color: #ffffff;">
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(12,18,34,0.92)); padding: 14px 18px; color: #ffffff;">
             <div style="font-size: 11px; font-weight: 800; color: #34d399; text-transform: uppercase;">NASA Orbit View Engine</div>
-            <div style="font-size: 13.5px; font-weight: 700;">Real-Time Satellite Trajectories & 3D Hotspot Telemetry</div>
+            <div style="font-size: 13px; font-weight: 700;">Real-Time Satellite Trajectories &amp; 3D Hotspot Telemetry</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- =====================================================================
-         SLIDE 2: THE CORE SCIENTIFIC CHALLENGE
+         SLIDE 2: THE CORE PROBLEM
          ===================================================================== -->
     <section class="slide" id="slide-2">
       <div class="slide-header">
         <div class="slide-header-left">
           <div class="slide-badge-row">
-            <span class="badge-nasa">CHALLENGE FOCUS</span>
-            <span class="badge-mint">EARTH SYSTEM COMPLEXITY</span>
+            <span class="badge-nasa">THE CORE DILEMMA</span>
+            <span class="badge-mint">WEATHER NOISE VS. CLIMATE SHIFT</span>
           </div>
           <h2 class="slide-title">The Dilemma of Earth System Trends</h2>
-          <p class="slide-subtitle">Why Multi-Decadal Climate Signals Get Lost in 1-Year Weather Noise</p>
+          <p class="slide-subtitle">Why Multi-Decadal Climate Signals Get Lost in Short-Term Weather Fluctuations</p>
         </div>
         <div class="slide-counter-pill">SLIDE 02 / 07</div>
       </div>
 
-      <div class="slide-body" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 24px;">
-        <div style="display: flex; flex-direction: column; gap: 14px;">
+      <div class="slide-body" style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 20px;">
+        <div style="display: flex; flex-direction: column; gap: 11px;">
           <div class="card" style="border-left: 4px solid #d97706;">
             <div class="card-title" style="color: #b45309;">
-              <span>🎲</span> 1. Weather Noise vs. Permanent Trend
+              <span>🎲</span> 1. Weather Noise Confused with Permanent Trends
             </div>
             <p class="card-desc">
-              A single drought year (e.g. 2002 or 2009) or flood year does <strong>not</strong> equal a permanent climate shift. Without 30-year non-parametric math, natural year-to-year noise is routinely confused with structural planetary change.
+              One cool week or single rainstorm leads people to assume climate change has stopped. Without 30-year mathematical analysis, natural weather noise is routinely mistaken for permanent reality.
             </p>
           </div>
 
           <div class="card" style="border-left: 4px solid #0f766e;">
             <div class="card-title">
-              <span>⚖️</span> 2. Regional Climate Dipoles (Opposite Trends)
+              <span>🌧️</span> 2. The Hidden Monsoon Collapse
             </div>
             <p class="card-desc">
-              A single macro-climatic thermodynamic driver (Indian Ocean warming holding +7%/°C moisture) causes <strong>opposite regional effects</strong>: violent surges on Western Ghats mountains (+42 mm/dec) while starving northern farmlands (-28 mm/dec).
+              National monsoon totals look normal on paper, but steady seasonal soaking has vanished. Precipitation has compressed into violent, destructive cloudbursts separated by prolonged 15–20 day dry gaps.
             </p>
           </div>
 
           <div class="card" style="border-left: 4px solid #dc2626;">
             <div class="card-title" style="color: #b91c1c;">
-              <span>🌾</span> 3. Extreme Heat & Rapid Soil Desiccation
+              <span>⚖️</span> 3. Opposite Regional Dipoles from One Driver
             </div>
             <p class="card-desc">
-              Scorching ground skin temperatures breaching 54°C accelerate atmospheric evaporative thirst, eliminating root-zone soil moisture in under 10 days and triggering destructive agricultural flash droughts.
+              A single atmospheric process (Indian Ocean warming holding +7%/°C moisture) drives catastrophic deluges on Western Ghats mountains (+42 mm/dec) while simultaneously desiccating northern farm belts (-28 mm/dec).
             </p>
           </div>
         </div>
 
-        <div style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: flex; flex-direction: column; gap: 12px;">
           <div class="card" style="flex: 1; padding: 0; overflow: hidden; border: 2px solid var(--mint-border); position: relative;">
             <img src="assets/diagram_problem_dipole.png" alt="Dipole Divergence Diagram" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
           </div>
-          <div class="card" style="padding: 12px 16px; background: #f0fdf4;">
-            <div style="font-size: 11.5px; font-weight: 800; color: #0f766e; text-transform: uppercase;">The 400 GB Data Barrier</div>
-            <p style="font-size: 12.5px; color: #334155; line-height: 1.45; margin-top: 3px;">
-              Raw HDF5/NetCDF NASA files weigh over 400 GB—unusable for local farmers. Our client engine compresses this into <strong>0.1-second zero-latency browser analytics</strong>.
+          <div class="card" style="padding: 10px 14px; background: #f0fdf4;">
+            <div style="font-size: 11px; font-weight: 800; color: #0f766e; text-transform: uppercase;">The 400 GB Data Accessibility Barrier</div>
+            <p style="font-size: 12px; color: #334155; line-height: 1.4; margin-top: 2px;">
+              Raw HDF5/NetCDF space files weigh 400 GB—unusable for local farmers. Our platform converts this into <strong>0.1-second zero-latency browser intelligence</strong>.
             </p>
           </div>
         </div>
@@ -481,389 +539,374 @@
     </section>
 
     <!-- =====================================================================
-         SLIDE 3: NASA SATELLITE CONSTELLATION & DATA PROVENANCE
+         SLIDE 3: 3 NASA SPACE CONSTELLATIONS & VITAL SIGNS
          ===================================================================== -->
     <section class="slide" id="slide-3">
       <div class="slide-header">
         <div class="slide-header-left">
           <div class="slide-badge-row">
-            <span class="badge-nasa">AUTHENTICATED DATA</span>
-            <span class="badge-mint">NASA EARTHDATA CONSTELLATION</span>
-            <span class="badge-amber">SHA-256 PROVENANCE VERIFIED</span>
+            <span class="badge-nasa">NASA CONSTELLATION</span>
+            <span class="badge-mint">MULTI-SENSOR FORENSICS</span>
+            <span class="badge-blue">CALIBRATED TO IMD NORMAL (1991–2020)</span>
           </div>
-          <h2 class="slide-title">Direct NASA Earth Observation Data Streams</h2>
-          <p class="slide-subtitle">Multi-Decadal Gridded Satellite Constellation & Climatological Provenance</p>
+          <h2 class="slide-title">The 3 Earth Vital Signs Tracked by NASA</h2>
+          <p class="slide-subtitle">Direct Space Observation Streams Across India's 6 Agro-Climatic Zones</p>
         </div>
         <div class="slide-counter-pill">SLIDE 03 / 07</div>
       </div>
 
-      <div class="slide-body" style="display: flex; flex-direction: column; gap: 16px;">
-        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; flex: 1;">
+      <div class="slide-body" style="display: flex; flex-direction: column; gap: 14px;">
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px;">
           <!-- Sensor 1: GPM -->
-          <div class="card" style="border-top: 4px solid #0284c7;">
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
-              <span style="font-size: 26px;">🌧️</span>
-              <span class="badge-mint" style="background:#e0f2fe; color:#0369a1; border-color:#bae6fd;">PRECIPITATION</span>
+          <div class="card" style="border-top: 4px solid #0284c7; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <span class="badge-blue">PRECIPITATION RADAR</span>
+                <span style="font-size: 10.5px; font-weight: 700; color: #0284c7;">GES DISC</span>
+              </div>
+              <div class="card-title" style="font-size: 16px; color: #0369a1;">🌧️ NASA GPM IMERG</div>
+              <p class="card-desc" style="margin-top: 6px;">
+                <strong>Vital Sign:</strong> Monsoon Rainfall &amp; Cloudbursts.<br>
+                <strong>Sensor:</strong> Dual-frequency Precipitation Radar &amp; GMI Microwave.<br>
+                <strong>Resolution:</strong> 0.1° (~10km) Monthly Gridded (1995–2025).<br>
+                <strong>What It Proves:</strong> Identifies localized cloudburst volume increases and prolonged 15–20 day agricultural rain gaps.
+              </p>
             </div>
-            <div class="card-title" style="font-size: 17px; color: #0369a1;">NASA GPM IMERG</div>
-            <p class="card-desc" style="margin-bottom: 12px;">
-              Integrated Multi-satellitE Retrievals for Global Precipitation Measurement. Tracks cloudburst deluges, erratic monsoon shifts, and 20-day dry spells.
-            </p>
-            <div style="margin-top: auto; font-size: 11px; background: #f8fafc; padding: 10px; border-radius: 8px; border: 1px solid #e2e8f0; font-family: 'JetBrains Mono', monospace;">
-              <div><strong>Product:</strong> GPM_3IMERGM_06</div>
-              <div><strong>Resolution:</strong> 0.1° (~10 km) Monthly</div>
-              <div><strong>Archive:</strong> GES DISC (Greenbelt, MD)</div>
+            <div class="metric-box" style="margin-top: 10px; background: #f0fdf4;">
+              <span class="metric-num" style="color: #0284c7; font-size: 18px;">DOI: 10.5067/GPM</span>
+              <span class="metric-label" style="color: #0284c7;">GPM_3IMERGM V06 / V07</span>
             </div>
           </div>
 
           <!-- Sensor 2: MODIS -->
-          <div class="card" style="border-top: 4px solid #d97706;">
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
-              <span style="font-size: 26px;">☀️</span>
-              <span class="badge-mint" style="background:#fef3c7; color:#92400e; border-color:#fde68a;">THERMAL SKIN</span>
+          <div class="card" style="border-top: 4px solid #d97706; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <span class="badge-amber">THERMAL SKIN DOMES</span>
+                <span style="font-size: 10.5px; font-weight: 700; color: #d97706;">LP DAAC</span>
+              </div>
+              <div class="card-title" style="font-size: 16px; color: #b45309;">☀️ NASA Terra/Aqua MODIS</div>
+              <p class="card-desc" style="margin-top: 6px;">
+                <strong>Vital Sign:</strong> Scorching Land Surface Heat Domes.<br>
+                <strong>Sensor:</strong> MODIS Thermal IR (Bands 31 &amp; 32: 10.78–12.27 µm).<br>
+                <strong>Resolution:</strong> 1 km Daily Daytime Skin Temp (1995–2025).<br>
+                <strong>What It Proves:</strong> Pinpoints ground skin temps repeatedly breaching 48.8°C–54°C in arid and urban heat corridors.
+              </p>
             </div>
-            <div class="card-title" style="font-size: 17px; color: #b45309;">NASA Terra/Aqua MODIS</div>
-            <p class="card-desc" style="margin-bottom: 12px;">
-              Moderate Resolution Imaging Spectroradiometer. Measures physical land surface skin temperatures (LST) and urban thermal domes reaching 54°C+.
-            </p>
-            <div style="margin-top: auto; font-size: 11px; background: #f8fafc; padding: 10px; border-radius: 8px; border: 1px solid #e2e8f0; font-family: 'JetBrains Mono', monospace;">
-              <div><strong>Product:</strong> MOD11A1 / MYD11A1 V6.1</div>
-              <div><strong>Resolution:</strong> 1 km Daily Thermal Skin</div>
-              <div><strong>Archive:</strong> LP DAAC (Sioux Falls, SD)</div>
+            <div class="metric-box" style="margin-top: 10px; background: #fffbeb;">
+              <span class="metric-num" style="color: #d97706; font-size: 18px;">DOI: 10.5067/MODIS</span>
+              <span class="metric-label" style="color: #92400e;">MOD11A1 / MYD11A1 V6.1</span>
             </div>
           </div>
 
           <!-- Sensor 3: SMAP -->
-          <div class="card" style="border-top: 4px solid #059669;">
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;">
-              <span style="font-size: 26px;">🌱</span>
-              <span class="badge-mint">ROOT-ZONE WATER</span>
+          <div class="card" style="border-top: 4px solid #10b981; justify-content: space-between;">
+            <div>
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+                <span class="badge-mint">ROOT-ZONE DESICCATION</span>
+                <span style="font-size: 10.5px; font-weight: 700; color: #047857;">NSIDC DAAC</span>
+              </div>
+              <div class="card-title" style="font-size: 16px; color: #065f46;">🌱 NASA SMAP Subsoil</div>
+              <p class="card-desc" style="margin-top: 6px;">
+                <strong>Vital Sign:</strong> Farmland Moisture &amp; Flash Drought.<br>
+                <strong>Sensor:</strong> L-Band Radiometer (1.41 GHz) &amp; Radar (1.26 GHz).<br>
+                <strong>Resolution:</strong> 9 km Gridded Top 0–100cm Root-Zone (SPL4SMGP).<br>
+                <strong>What It Proves:</strong> Catches rapid subsoil water exhaustion starving rainfed pulse and cotton crops in Vidarbha and Deccan.
+              </p>
             </div>
-            <div class="card-title" style="font-size: 17px; color: #047857;">NASA SMAP L4 Radar</div>
-            <p class="card-desc" style="margin-bottom: 12px;">
-              Soil Moisture Active Passive L-band radar radiometer. Tracks sub-surface root water (0–100 cm depth) to detect rapid crop flash droughts.
-            </p>
-            <div style="margin-top: auto; font-size: 11px; background: #f8fafc; padding: 10px; border-radius: 8px; border: 1px solid #e2e8f0; font-family: 'JetBrains Mono', monospace;">
-              <div><strong>Product:</strong> SPL4SMGP V7</div>
-              <div><strong>Resolution:</strong> 9 km Root-Zone (0–100cm)</div>
-              <div><strong>Archive:</strong> NSIDC DAAC (Boulder, CO)</div>
+            <div class="metric-box" style="margin-top: 10px; background: #f0fdf4;">
+              <span class="metric-num" style="color: #065f46; font-size: 18px;">DOI: 10.5067/SMAP</span>
+              <span class="metric-label" style="color: #047857;">SPL4SMGP Version 7</span>
             </div>
           </div>
         </div>
 
-        <div class="card" style="padding: 12px 18px; background: linear-gradient(90deg, #f0fdf4 0%, #e6fffa 100%);">
+        <!-- Climatological Baseline Strip -->
+        <div class="card" style="padding: 10px 16px; background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);">
           <div style="display: flex; align-items: center; justify-content: space-between;">
-            <div style="font-size: 12.5px; font-weight: 700; color: #0f766e;">
-              🏛️ Official Climatological Baseline Normal: <strong>India Meteorological Department (IMD) 30-Year Normal (1991–2020)</strong>
+            <div style="display: flex; align-items: center; gap: 8px;">
+              <span style="font-size: 18px;">🏛️</span>
+              <span style="font-size: 12.5px; font-weight: 700; color: #0f766e;">National Climatological Standard:</span>
+              <span style="font-size: 12px; color: #334155;">Calibrated against India Meteorological Department (IMD) 1991–2020 30-Year Normals across 36 meteorological subdivisions.</span>
             </div>
-            <span class="badge-mint">Deseasonalized Anomaly Engine Active</span>
+            <span class="badge-mint" style="font-size: 11px;">VERIFIED MATHEMATICAL BASELINE</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- =====================================================================
-         SLIDE 4: MATHEMATICAL FORENSIC ENGINE & PIPELINE
+         SLIDE 4: KEY PLATFORM FEATURES
          ===================================================================== -->
     <section class="slide" id="slide-4">
       <div class="slide-header">
         <div class="slide-header-left">
           <div class="slide-badge-row">
-            <span class="badge-nasa">METHODOLOGY</span>
-            <span class="badge-mint">MATHEMATICAL FORENSICS</span>
+            <span class="badge-nasa">PLATFORM ARCHITECTURE</span>
+            <span class="badge-mint">ZERO-LATENCY BROWSER ENGINE</span>
           </div>
-          <h2 class="slide-title">4-Step Scientific Pipeline & Zero-Latency Speed</h2>
-          <p class="slide-subtitle">Converting 400 GB of Multi-Decadal Raw Satellites into Real-Time Browser Analytics</p>
+          <h2 class="slide-title">Core Modules of the EarthScope Platform</h2>
+          <p class="slide-subtitle">Interactive Exploration Built Directly into Any Browser with Zero Installation</p>
         </div>
         <div class="slide-counter-pill">SLIDE 04 / 07</div>
       </div>
 
-      <div class="slide-body" style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 24px;">
-        <div style="display: flex; flex-direction: column; gap: 12px;">
-          <!-- Step 1 -->
-          <div class="card" style="padding: 14px 18px; border-left: 4px solid #0f766e;">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-size: 13.5px; font-weight: 800; color: #0f766e;">STEP 1: SATELLITE INGESTION</span>
-              <span class="badge-mint" style="font-size: 10px;">[68°E – 97.5°E]</span>
+      <div class="slide-body" style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 20px;">
+        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 11px;">
+          <!-- Feature 1 -->
+          <div class="card">
+            <div class="card-title" style="font-size: 14px;">
+              <span>🌌</span> 1. Orbit View (3D Earth)
             </div>
-            <p style="font-size: 12.5px; color: #334155; margin-top: 4px;">
-              Ingests continuous monthly swaths of GPM, MODIS, and SMAP across India's 36 meteorological subdivisions.
+            <p class="card-desc">
+              Three.js WebGL globe visualizing real-time orbital paths of GPM, MODIS, and SMAP constellations with dynamic telemetry.
             </p>
           </div>
 
-          <!-- Step 2 -->
-          <div class="card" style="padding: 14px 18px; border-left: 4px solid #0284c7;">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-size: 13.5px; font-weight: 800; color: #0369a1;">STEP 2: DESEASONALIZATION</span>
-              <span class="badge-mint" style="background:#e0f2fe; color:#0369a1; font-size: 10px;">CYCLE REMOVAL</span>
+          <!-- Feature 2 -->
+          <div class="card">
+            <div class="card-title" style="font-size: 14px;">
+              <span>🔍</span> 2. Level-21 Deep Zoom
             </div>
-            <p style="font-size: 12.5px; color: #334155; margin-top: 4px;">
-              Subtracts the 30-year monthly IMD climatological normal, removing recurring summer/monsoon seasonal spikes to isolate true climate change.
+            <p class="card-desc">
+              High-resolution GIS map zooming from national overview down to university campuses, village farms, and city neighborhoods.
             </p>
           </div>
 
-          <!-- Step 3 -->
-          <div class="card" style="padding: 14px 18px; border-left: 4px solid #8b5cf6;">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-size: 13.5px; font-weight: 800; color: #7c3aed;">STEP 3: STATISTICAL FORENSICS</span>
-              <span class="badge-mint" style="background:#ede9fe; color:#6d28d9; font-size: 10px;">MANN-KENDALL & SEN</span>
+          <!-- Feature 3 -->
+          <div class="card">
+            <div class="card-title" style="font-size: 14px;">
+              <span>⚖️</span> 3. Dual-Zone Compare Areas
             </div>
-            <p style="font-size: 12.5px; color: #334155; margin-top: 4px;">
-              Calculates Theil-Sen non-parametric median slopes, evaluates monotonic direction ($Z$), and applies Benjamini-Hochberg FDR control ($q &lt; 0.05$).
+            <p class="card-desc">
+              Side-by-side dipole diagnostics contrasting any two regions (e.g. Rajasthan vs Kerala) to reveal parallel or opposing trajectories.
             </p>
           </div>
 
-          <!-- Step 4 -->
-          <div class="card" style="padding: 14px 18px; border-left: 4px solid #10b981;">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <span style="font-size: 13.5px; font-weight: 800; color: #047857;">STEP 4: IMMEDIATE VERDICT</span>
-              <span class="badge-mint" style="font-size: 10px;">0.1s CLIENT SPEED</span>
+          <!-- Feature 4 -->
+          <div class="card">
+            <div class="card-title" style="font-size: 14px;">
+              <span>⏳</span> 4. EcoTimeline (1995–2040+)
             </div>
-            <p style="font-size: 12.5px; color: #334155; margin-top: 4px;">
-              Outputs plain-language verdicts: <em>&ldquo;Confirmed Permanent Trend&rdquo;</em> vs. <em>&ldquo;Natural Weather Noise&rdquo;</em> directly into maps and reports.
+            <p class="card-desc">
+              31-year animated time-lapse scrubber partitioning past baseline, present observed, and 2035/2040 Theil-Sen future outlooks.
+            </p>
+          </div>
+
+          <!-- Feature 5 -->
+          <div class="card" style="grid-column: span 2; background: #f0fdf4; border-color: rgba(16, 185, 129, 0.4);">
+            <div class="card-title" style="font-size: 14px;">
+              <span>🤖</span> 5. AI Climate Co-Pilot &amp; Copyable Public REST API
+            </div>
+            <p class="card-desc">
+              Built-in 42-term plain-language scientific dictionary + instant 1-click copyable API key and Word (.doc), PDF, and CSV downloads for researchers and students.
             </p>
           </div>
         </div>
 
-        <div style="display: flex; flex-direction: column; gap: 14px;">
-          <div class="card" style="flex: 1; padding: 0; overflow: hidden; border: 2px solid var(--mint-border);">
-            <img src="assets/diagram_methodology_flow.png" alt="Methodology Flow Diagram" style="width: 100%; height: 100%; object-fit: contain; background: #ffffff;">
-          </div>
-          <div class="metric-box" style="background: #ffffff; border: 1.5px solid var(--mint-border);">
-            <div style="display: flex; justify-content: space-between; align-items: center;">
-              <div>
-                <span class="metric-num" style="font-size: 22px;">400 GB ➔ 0.1s</span>
-                <div style="font-size: 11px; color: #0f766e; font-weight: 700;">Zero Server Crash Overhead</div>
-              </div>
-              <span class="badge-mint">Client-Side WASM Math</span>
-            </div>
+        <div class="card" style="padding: 0; overflow: hidden; border: 2px solid var(--mint-border); position: relative;">
+          <img src="assets/dashboard_map_graph.jpg" alt="Dashboard Map and Graph" style="width: 100%; height: 100%; object-fit: cover;">
+          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(12,18,34,0.92)); padding: 14px 18px; color: #ffffff;">
+            <div style="font-size: 11px; font-weight: 800; color: #34d399; text-transform: uppercase;">Production GIS Engine</div>
+            <div style="font-size: 13px; font-weight: 700;">Esri Satellite Basemaps + Sen's Slope Regression Curves</div>
           </div>
         </div>
       </div>
     </section>
 
     <!-- =====================================================================
-         SLIDE 5: THREE EMPIRICAL BREAKTHROUGHS
+         SLIDE 5: HOW EARTHSCOPE IS DIFFERENT FROM OTHER WEBSITES
          ===================================================================== -->
     <section class="slide" id="slide-5">
       <div class="slide-header">
         <div class="slide-header-left">
           <div class="slide-badge-row">
-            <span class="badge-nasa">EMPIRICAL PROOF</span>
-            <span class="badge-mint">31-YEAR OBSERVATIONAL RECORD</span>
+            <span class="badge-nasa">COMPETITIVE ADVANTAGE</span>
+            <span class="badge-mint">KEY DIFFERENTIATORS</span>
+            <span class="badge-amber">WHY EARTHSCOPE LEADS</span>
           </div>
-          <h2 class="slide-title">Forensic Discoveries Across India's Agro-Climatic Zones</h2>
-          <p class="slide-subtitle">Three Statistically Verified Ground Truths Proven by NASA Space Observations</p>
+          <h2 class="slide-title">How EarthScope is Different from Other Climate Websites</h2>
+          <p class="slide-subtitle">Transforming Passive, Overwhelming Charts into Scientifically Verified, Hyper-Local Action</p>
         </div>
         <div class="slide-counter-pill">SLIDE 05 / 07</div>
       </div>
 
-      <div class="slide-body" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;">
+      <div class="slide-body" style="display: flex; flex-direction: column; gap: 12px;">
+        <table class="comp-table">
+          <thead>
+            <tr>
+              <th style="width: 22%;">Forensic Dimension</th>
+              <th style="width: 38%; color: #64748b;">❌ Traditional Climate Portals &amp; Websites</th>
+              <th class="hero-th" style="width: 40%;">🌿 EarthScope: Trend Detective (Our Solution)</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>1. Trend Verification</strong></td>
+              <td style="color: #64748b;">Show simple unverified year-to-year swings; confuse temporary 1-year weather noise with permanent climate shifts.</td>
+              <td class="hero-td"><strong>Proves permanent shifts</strong> with &gt;99% confidence using non-parametric Theil-Sen median slopes, Mann-Kendall rank tests (p &lt; 0.01), and FDR q &lt; 0.05.</td>
+            </tr>
+            <tr>
+              <td><strong>2. Regional Contrast</strong></td>
+              <td style="color: #64748b;">Display national or state averages that mask local reality (e.g. India monsoon looks &ldquo;normal&rdquo; overall).</td>
+              <td class="hero-td"><strong>Dual-Zone Dipole Comparator:</strong> Exposes opposing trajectories (drying northern breadbasket vs. flooding mountain slopes) from the same macro driver.</td>
+            </tr>
+            <tr>
+              <td><strong>3. Spatial Resolution</strong></td>
+              <td style="color: #64748b;">Stop at broad country or state boundaries with coarse, blurry heatmaps; impossible to see local risk.</td>
+              <td class="hero-td"><strong>Level-21 Deep Zoom GIS:</strong> Inspect individual university campuses, village agricultural plots, and urban neighborhoods down to 100 meters.</td>
+            </tr>
+            <tr>
+              <td><strong>4. Climate Coupling</strong></td>
+              <td style="color: #64748b;">Treat variables in isolation (only rain or only temperature) without linking thermodynamic feedbacks.</td>
+              <td class="hero-td"><strong>Coupled Compound Stress:</strong> Links MODIS thermal domes (&gt;48°C) with SMAP root-zone moisture loss to detect destructive flash droughts.</td>
+            </tr>
+            <tr>
+              <td><strong>5. Speed &amp; Usability</strong></td>
+              <td style="color: #64748b;">Require downloading massive 400 GB NetCDF/HDF5 scientific files and installing heavy desktop GIS tools.</td>
+              <td class="hero-td"><strong>100% In-Browser &amp; Zero Latency:</strong> Loads in &lt;1 second on phone or laptop with 1-click Word (.doc), PDF, and CSV downloads + free Open REST API.</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- =====================================================================
+         SLIDE 6: GROUND TRUTH DISCOVERIES & ACTIONABLE MITIGATION
+         ===================================================================== -->
+    <section class="slide" id="slide-6">
+      <div class="slide-header">
+        <div class="slide-header-left">
+          <div class="slide-badge-row">
+            <span class="badge-nasa">EMPIRICAL PROOF</span>
+            <span class="badge-mint">ACTIONABLE ADAPTATION</span>
+          </div>
+          <h2 class="slide-title">Ground Truth Discoveries &amp; Actionable Solutions</h2>
+          <p class="slide-subtitle">Three Verified Regional Insights and Practical Interventions for 1.4 Billion Citizens</p>
+        </div>
+        <div class="slide-counter-pill">SLIDE 06 / 07</div>
+      </div>
+
+      <div class="slide-body" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
         <!-- Discovery 1 -->
         <div class="card" style="border-top: 4px solid #0284c7; justify-content: space-between;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <span class="badge-mint" style="background:#e0f2fe; color:#0369a1;">NORTHERN PLAINS</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span class="badge-blue">NORTHERN BREADBASKET</span>
               <span style="font-size: 11px; font-weight: 800; color: #0284c7;">p = 0.008</span>
             </div>
-            <div class="card-title" style="font-size: 17px; color: #0369a1;">Indo-Gangetic Drying Corridor</div>
-            <p class="card-desc" style="margin-top: 8px;">
-              Over 31 years, steady soaking rains across Punjab, Haryana, and Western UP have dropped by <strong>-28 mm per decade (-8.2%)</strong>, replaced by 15–20 day dry spells.
+            <div class="card-title" style="font-size: 15.5px; color: #0369a1;">Indo-Gangetic Drying Corridor</div>
+            <p class="card-desc" style="margin-top: 6px;">
+              Steady soaking monsoon rainfall across Punjab, Haryana, and UP dropped by <strong>-28 mm per decade (-8.2%)</strong>, replaced by 15–20 day rainless gaps during peak crop growth.
             </p>
           </div>
-          <div class="metric-box" style="margin-top: 14px; background: #f0fdf4;">
-            <span class="metric-num" style="color: #0369a1; font-size: 24px;">-28 mm / Dec</span>
-            <span class="metric-label" style="color: #0369a1;">Permanent Drying Signal</span>
-            <span style="font-size: 11px; color: #64748b;">99.2% Statistical Confidence</span>
+          <div class="metric-box" style="margin-top: 10px; background: #f0fdf4;">
+            <span class="metric-label" style="color: #0369a1;">Actionable Solution:</span>
+            <span style="font-size: 11.5px; color: #065f46; font-weight: 600;">Shift crop sowing windows, deploy precision micro-drip irrigation, and cultivate drought-hardy pulses and millets.</span>
           </div>
         </div>
 
         <!-- Discovery 2 -->
         <div class="card" style="border-top: 4px solid #d97706; justify-content: space-between;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <span class="badge-mint" style="background:#fef3c7; color:#92400e;">THAR DESERT MARGIN</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span class="badge-amber">ARID THERMAL CORE</span>
               <span style="font-size: 11px; font-weight: 800; color: #d97706;">p &lt; 0.0001</span>
             </div>
-            <div class="card-title" style="font-size: 17px; color: #b45309;">Thar Heat Dome Expansion</div>
-            <p class="card-desc" style="margin-top: 8px;">
-              Extreme heatwave days (&gt;45°C) increased by <strong>+5.0 days per decade</strong>. Ground skin temperatures breach 54°C in Phalodi, driving sensible heat flux to 92% of net radiation.
+            <div class="card-title" style="font-size: 15.5px; color: #b45309;">Thar Desert Thermal Dome</div>
+            <p class="card-desc" style="margin-top: 6px;">
+              Extreme heatwave days (&gt;45°C) increased by <strong>+5 days/decade</strong>. Ground skin temperatures repeatedly breach 54°C in Phalodi, driving sensible heat to 92% of net radiation.
             </p>
           </div>
-          <div class="metric-box" style="margin-top: 14px; background: #fffbeb;">
-            <span class="metric-num" style="color: #d97706; font-size: 24px;">+5.0 Days / Dec</span>
-            <span class="metric-label" style="color: #92400e;">Heatwave Acceleration</span>
-            <span style="font-size: 11px; color: #64748b;">Peak LST Reaching 54.2°C</span>
+          <div class="metric-box" style="margin-top: 10px; background: #fffbeb;">
+            <span class="metric-label" style="color: #92400e;">Actionable Solution:</span>
+            <span style="font-size: 11.5px; color: #92400e; font-weight: 600;">Deploy floating solar panels over irrigation canals to cut evaporation; plant native Khejri agroforestry shelterbelts.</span>
           </div>
         </div>
 
         <!-- Discovery 3 -->
-        <div class="card" style="border-top: 4px solid #dc2626; justify-content: space-between;">
+        <div class="card" style="border-top: 4px solid #10b981; justify-content: space-between;">
           <div>
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px;">
-              <span class="badge-mint" style="background:#fee2e2; color:#b91c1c;">CENTRAL FARMLANDS</span>
-              <span style="font-size: 11px; font-weight: 800; color: #dc2626;">p = 0.0001</span>
+            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 6px;">
+              <span class="badge-mint">WESTERN ESCARPMENT</span>
+              <span style="font-size: 11px; font-weight: 800; color: #047857;">p = 0.001</span>
             </div>
-            <div class="card-title" style="font-size: 17px; color: #b91c1c;">Vidarbha Flash Droughts</div>
-            <p class="card-desc" style="margin-top: 8px;">
-              Sub-surface root-zone soil moisture is exhausting at <strong>-9% per decade</strong>. Combined with high evaporative atmospheric thirst (VPD), rainfed crops desiccate in just 10 days.
+            <div class="card-title" style="font-size: 15.5px; color: #065f46;">Western Ghats Torrential Deluge</div>
+            <p class="card-desc" style="margin-top: 6px;">
+              Intense mountain cloudbursts dumping <strong>+42 mm torrential rain per decade</strong> along Kerala and Konkan slopes, elevating flash flood and landslide vulnerabilities.
             </p>
           </div>
-          <div class="metric-box" style="margin-top: 14px; background: #fef2f2;">
-            <span class="metric-num" style="color: #dc2626; font-size: 24px;">-9.0% / Dec</span>
-            <span class="metric-label" style="color: #b91c1c;">Root-Zone Water Loss</span>
-            <span style="font-size: 11px; color: #64748b;">Catastrophic Rainfed Vulnerability</span>
+          <div class="metric-box" style="margin-top: 10px; background: #f0fdf4;">
+            <span class="metric-label" style="color: #047857;">Actionable Solution:</span>
+            <span style="font-size: 11.5px; color: #047857; font-weight: 600;">Reinforce hillside drainage culverts, install automated early-warning flood telemetry, and mandate slope reforestation.</span>
           </div>
         </div>
       </div>
     </section>
 
     <!-- =====================================================================
-         SLIDE 6: COMPOUND CLIMATE RISK & INTERCONNECTED SYSTEMS
-         ===================================================================== -->
-    <section class="slide" id="slide-6">
-      <div class="slide-header">
-        <div class="slide-header-left">
-          <div class="slide-badge-row">
-            <span class="badge-nasa">SYSTEM DYNAMICS</span>
-            <span class="badge-mint">COUPLED FEEDBACK MECHANISMS</span>
-          </div>
-          <h2 class="slide-title">Coupled Feedbacks in Earth's Environment</h2>
-          <p class="slide-subtitle">When Multiple Climate Extremes Strike Simultaneously</p>
-        </div>
-        <div class="slide-counter-pill">SLIDE 06 / 07</div>
-      </div>
-
-      <div class="slide-body" style="display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 24px;">
-        <div style="display: flex; flex-direction: column; justify-content: space-between;">
-          <div class="card" style="background: linear-gradient(135deg, #f0fdf4 0%, #e6fffa 100%);">
-            <div class="card-title" style="font-size: 15px;">
-              <span>⚡</span> The Runaway Thermodynamic Desiccation Loop
-            </div>
-            <div style="display: flex; align-items: center; justify-content: space-between; margin-top: 10px; font-size: 11.5px; font-weight: 700; color: #0f766e; text-align: center;">
-              <div style="background:#ffffff; padding:8px 10px; border-radius:8px; border:1px solid var(--mint-border);">Extreme Heat<br>(MODIS &gt;45°C)</div>
-              <span>➔</span>
-              <div style="background:#ffffff; padding:8px 10px; border-radius:8px; border:1px solid var(--mint-border);">Air Thirst<br>(High VPD)</div>
-              <span>➔</span>
-              <div style="background:#ffffff; padding:8px 10px; border-radius:8px; border:1px solid var(--mint-border);">Soil Sucked<br>(SMAP -9%)</div>
-              <span>➔</span>
-              <div style="background:#ffffff; padding:8px 10px; border-radius:8px; border:1px solid var(--mint-border);">No Cooling<br>(Ground Bakes)</div>
-            </div>
-          </div>
-
-          <!-- Hotspot Table -->
-          <div class="card">
-            <div class="card-title" style="font-size: 15px;">
-              <span>🚨</span> Compound Climate Multi-Risk Hotspots
-            </div>
-            <div style="display: flex; flex-direction: column; gap: 8px; margin-top: 8px;">
-              <div style="display:flex; justify-content:space-between; align-items:center; padding:8px 12px; background:#f8fafc; border-radius:8px; border:1px solid #e2e8f0;">
-                <div>
-                  <strong style="color:#0f172a; font-size:13px;">Central India (Vidarbha / MP)</strong>
-                  <div style="font-size:11px; color:#64748b;">Flash drought threat to rainfed cotton & soybean</div>
-                </div>
-                <span class="badge-amber" style="background:#fee2e2; color:#b91c1c; border-color:#fca5a5;">INDEX: 88/100</span>
-              </div>
-              <div style="display:flex; justify-content:space-between; align-items:center; padding:8px 12px; background:#f8fafc; border-radius:8px; border:1px solid #e2e8f0;">
-                <div>
-                  <strong style="color:#0f172a; font-size:13px;">Thar Margin (Northwest Rajasthan)</strong>
-                  <div style="font-size:11px; color:#64748b;">Sensible heat dome & vegetative canopy desiccation</div>
-                </div>
-                <span class="badge-amber" style="background:#fee2e2; color:#b91c1c; border-color:#fca5a5;">INDEX: 92/100</span>
-              </div>
-              <div style="display:flex; justify-content:space-between; align-items:center; padding:8px 12px; background:#f8fafc; border-radius:8px; border:1px solid #e2e8f0;">
-                <div>
-                  <strong style="color:#0f172a; font-size:13px;">Rayalaseema (South Deccan)</strong>
-                  <div style="font-size:11px; color:#64748b;">Soil desiccation with night-time heat trapping</div>
-                </div>
-                <span class="badge-amber" style="background:#fffbeb; color:#92400e; border-color:#fde68a;">INDEX: 84/100</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card" style="padding: 0; overflow: hidden; border: 2px solid var(--mint-border); position: relative;">
-          <img src="assets/dashboard_map_graph.jpg" alt="Dashboard Map and Time-Series Graph" style="width: 100%; height: 100%; object-fit: cover;">
-          <div style="position: absolute; bottom: 0; left: 0; right: 0; background: linear-gradient(transparent, rgba(12,18,34,0.92)); padding: 14px 18px; color: #ffffff;">
-            <div style="font-size: 11px; font-weight: 800; color: #34d399; text-transform: uppercase;">Forensic Analytics Engine</div>
-            <div style="font-size: 13px; font-weight: 700;">Deep-Zoom Satellite Leaflet Maps + Mann-Kendall Trendlines</div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- =====================================================================
-         SLIDE 7: CLIENT ACTION DELIVERY & HACKATHON WINNING IMPACT
+         SLIDE 7: REFERENCES, DATA SOURCES & PROVENANCE (LAST PAGE REFERENCE!)
          ===================================================================== -->
     <section class="slide" id="slide-7">
       <div class="slide-header">
         <div class="slide-header-left">
           <div class="slide-badge-row">
-            <span class="badge-nasa">ACTIONABLE IMPACT</span>
-            <span class="badge-mint">FOR 1.4 BILLION CITIZENS</span>
-            <span class="badge-amber">OPEN SCIENCE & AI POWERED</span>
+            <span class="badge-nasa">OFFICIAL REFERENCES</span>
+            <span class="badge-mint">OPEN SCIENCE PROVENANCE</span>
+            <span class="badge-amber">SPACE APPS 2026 ELIGIBILITY</span>
           </div>
-          <h2 class="slide-title">Turning Space Science into Immediate Action</h2>
-          <p class="slide-subtitle">Adaptive Guidance, Open Science REST API & Gemini AI Climate Co-Pilot</p>
+          <h2 class="slide-title">References, Data Sources &amp; Provenance</h2>
+          <p class="slide-subtitle">Direct NASA Earth Observation Archives, National Standards &amp; Open Source Stack</p>
         </div>
         <div class="slide-counter-pill">SLIDE 07 / 07</div>
       </div>
 
-      <div class="slide-body" style="display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 24px;">
-        <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 14px;">
-          <!-- Feature 1 -->
-          <div class="card">
+      <div class="slide-body" style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
+        <!-- Ref Col 1 -->
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div class="card" style="border-left: 4px solid #0f766e;">
             <div class="card-title" style="font-size: 14.5px;">
-              <span>📋</span> Actionable Adaptation Matrix
+              <span>🛰️</span> NASA Earth Science Data Archives (Direct DOIs)
             </div>
-            <p class="card-desc">
-              Translates complex satellite math into concrete steps for farmers: drought-resilient millets, drip irrigation, and optimized sowing calendars.
-            </p>
+            <div style="font-size: 11.5px; color: var(--text-body); line-height: 1.55; display: flex; flex-direction: column; gap: 4px;">
+              <div>• <strong>NASA GPM IMERG Final Run V06/V07:</strong> GES DISC DAAC | DOI: <code>10.5067/GPM/IMERG/3B-MONTH/06</code></div>
+              <div>• <strong>NASA MODIS Terra/Aqua LST V061 (MOD11A1):</strong> LP DAAC | DOI: <code>10.5067/MODIS/MOD11A1.061</code></div>
+              <div>• <strong>NASA SMAP L4 Root-Zone Soil Moisture (SPL4SMGP V7):</strong> NSIDC DAAC | DOI: <code>10.5067/BAP1J8835848</code></div>
+              <div>• <strong>NASA Common Metadata Repository (CMR):</strong> <code>cmr.earthdata.nasa.gov</code> (User: <code>anirudh012</code>)</div>
+            </div>
           </div>
 
-          <!-- Feature 2 -->
-          <div class="card">
+          <div class="card" style="border-left: 4px solid #10b981;">
             <div class="card-title" style="font-size: 14.5px;">
-              <span>⏳</span> EcoTimeline (1995 ➔ 2040+)
+              <span>🏛️</span> National Meteorological Baseline Standard
             </div>
-            <p class="card-desc">
-              Triad analysis partitioning 31 years: Past baseline normal (1995–2010), Present observed (2011–2025), and 2040 future outlook.
-            </p>
-          </div>
-
-          <!-- Feature 3 -->
-          <div class="card">
-            <div class="card-title" style="font-size: 14.5px;">
-              <span>🤖</span> Gemini AI Climate Co-Pilot
+            <div style="font-size: 11.5px; color: var(--text-body); line-height: 1.55;">
+              <strong>India Meteorological Department (IMD):</strong> 1991–2020 30-Year Climatological Normals (<a href="https://mausam.imd.gov.in" target="_blank" style="color: #0f766e; text-decoration: underline;">mausam.imd.gov.in</a>). All satellite anomalies calibrated against 36 meteorological subdivisions.
             </div>
-            <p class="card-desc">
-              Zero-latency assistant explaining 80+ scientific terms, state trends, and comparisons in simple English and Roman Hinglish.
-            </p>
-          </div>
-
-          <!-- Feature 4 -->
-          <div class="card">
-            <div class="card-title" style="font-size: 14.5px;">
-              <span>🔑</span> Free Open Science API
-            </div>
-            <p class="card-desc">
-              1-click public API key and direct download buttons (JSON & CSV) allowing universities and developers to build on our data.
-            </p>
           </div>
         </div>
 
-        <div style="display: flex; flex-direction: column; justify-content: space-between;">
-          <div class="card" style="padding: 0; overflow: hidden; border: 2px solid var(--mint-border); height: 230px;">
-            <img src="assets/compare_dual_zone.png" alt="Dual-Zone Comparison Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
+        <!-- Ref Col 2 -->
+        <div style="display: flex; flex-direction: column; gap: 12px;">
+          <div class="card" style="border-left: 4px solid #0284c7;">
+            <div class="card-title" style="font-size: 14.5px;">
+              <span>🤝</span> Partner Space Agencies &amp; Geospatial Libraries
+            </div>
+            <div style="font-size: 11.5px; color: var(--text-body); line-height: 1.55; display: flex; flex-direction: column; gap: 4px;">
+              <div>• <strong>JAXA (Japan Aerospace Exploration Agency):</strong> GPM Core Observatory Partnership (<a href="https://www.eorc.jaxa.jp/GPM/en/index.html" target="_blank" style="color: #0284c7; text-decoration: underline;">eorc.jaxa.jp</a>).</div>
+              <div>• <strong>Esri World Imagery &amp; OpenStreetMap:</strong> High-resolution satellite basemaps &amp; vector tiles.</div>
+              <div>• <strong>Open Source Scientific Stack:</strong> Leaflet.js, Three.js (WebGL), Chart.js, NumPy &amp; SciPy.</div>
+            </div>
           </div>
 
-          <div class="card" style="background: linear-gradient(135deg, #0f766e 0%, #047857 100%); color: #ffffff; padding: 18px;">
-            <div style="font-size: 11px; font-weight: 800; color: #a7f3d0; text-transform: uppercase; letter-spacing: 0.5px;">✦ NASA Space Apps 2026 Core Verdict</div>
-            <div style="font-size: 15px; font-weight: 800; margin-top: 4px; line-height: 1.4;">
-              &ldquo;Authenticated by NASA, calibrated by IMD, and built for India's 1.4 billion citizens.&rdquo;
+          <div class="card" style="border-left: 4px solid #d97706; background: linear-gradient(135deg, #f0fdf4 0%, #ffffff 100%);">
+            <div class="card-title" style="font-size: 14.5px; color: #065f46;">
+              <span>🌐</span> Public Codebase &amp; Open Science REST API
             </div>
-            <div style="font-size: 11.5px; color: #e6fffa; margin-top: 6px;">
-              Live Web App • 31-Yr Satellite Record • Zero Latency • 100% Truthful AI & Physics
+            <div style="font-size: 11.5px; color: var(--text-body); line-height: 1.55;">
+              <div>• <strong>GitHub Repository:</strong> <a href="https://github.com/ANIRUDH061/Be-an-Earth-System-Trend-Detective" target="_blank" style="color: #0f766e; font-weight: 700; text-decoration: underline;">github.com/ANIRUDH061/Be-an-Earth-System-Trend-Detective</a></div>
+              <div>• <strong>Free Public API Key:</strong> Copyable directly from website footer for researchers and universities.</div>
+              <div>• <strong>License:</strong> MIT Open Science — Built with pride for India's 1.4 billion citizens.</div>
             </div>
           </div>
         </div>
@@ -883,13 +926,13 @@
       </div>
 
       <div class="controls-center" id="dots-container">
-        <div class="dot-nav active" onclick="goToSlide(1)"></div>
-        <div class="dot-nav" onclick="goToSlide(2)"></div>
-        <div class="dot-nav" onclick="goToSlide(3)"></div>
-        <div class="dot-nav" onclick="goToSlide(4)"></div>
-        <div class="dot-nav" onclick="goToSlide(5)"></div>
-        <div class="dot-nav" onclick="goToSlide(6)"></div>
-        <div class="dot-nav" onclick="goToSlide(7)"></div>
+        <div class="dot-nav active" onclick="goToSlide(1)" title="Slide 1: Title"></div>
+        <div class="dot-nav" onclick="goToSlide(2)" title="Slide 2: Core Dilemma"></div>
+        <div class="dot-nav" onclick="goToSlide(3)" title="Slide 3: 3 NASA Signs"></div>
+        <div class="dot-nav" onclick="goToSlide(4)" title="Slide 4: Platform Modules"></div>
+        <div class="dot-nav" onclick="goToSlide(5)" title="Slide 5: How It's Different"></div>
+        <div class="dot-nav" onclick="goToSlide(6)" title="Slide 6: Ground Truths"></div>
+        <div class="dot-nav" onclick="goToSlide(7)" title="Slide 7: References"></div>
       </div>
 
       <div class="controls-right">
@@ -983,4 +1026,3 @@
   </script>
 </body>
 </html>
-
