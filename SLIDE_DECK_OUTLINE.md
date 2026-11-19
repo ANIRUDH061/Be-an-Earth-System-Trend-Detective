@@ -12,8 +12,12 @@
 * **Headline:** India Earth System Trend Detective
 * **Subtitle:** Separating Permanent Climate Shifts from 1-Year Weather Noise across 31 Continuous Years (1995–2025)
 * **Hook Statement:** *"A single Earth science process can drive opposite trends in different regions. While India's national monsoon looks stable on paper, satellites reveal steady seasonal rain has vanished—compressing into extreme cloudbursts separated by 20-day dry spells that starve crops."*
-* **Team & Credentials:**
-  * NASA Earthdata Authenticated User: `anirudh012`
+* **Team & Credentials (NAKSHATRA-X):**
+  * Team Name: `NAKSHATRA-X`
+  * Lead Detective & Systems: `Anirudh Gahlot / Team Lead`
+  * Remote Sensing & Modeling: `Jay Joshi / Manurudra Singh / Anirudh Gahlot / Pankaj Saini`
+  * UI/UX & Geospatial Architecture: `Anirudh Gahlot / Pankaj Saini`
+  * NASA Earthdata Authenticated User: `anirudh012` (Level 3 Active)
   * Dual Platform: WebGL 3D System Pipeline + Real Deep-Zoom Leaflet Map (Level 21x)
   * Scientific Baseline: IMD 30-Year Climatological Normal (1991–2020)
 
